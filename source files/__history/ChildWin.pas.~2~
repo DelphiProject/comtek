@@ -1,0 +1,27 @@
+unit CHILDWIN;
+
+interface
+
+uses Winapi.Windows, System.Classes, Vcl.Graphics, Vcl.Forms, Vcl.Controls,
+  Vcl.StdCtrls;
+
+type
+  TFrmOperator = class(TForm)
+    Memo1: TMemo;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmOperator.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+end.

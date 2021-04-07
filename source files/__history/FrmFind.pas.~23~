@@ -1,0 +1,29 @@
+unit FrmFind;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls,
+  Vcl.StdCtrls, Vcl.ToolWin, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TFrameFind = class(TFrame)
+    ScrollBox1: TScrollBox;
+    GroupBox1: TGroupBox;
+    ToolBar1: TToolBar;
+    Edit1: TEdit;
+    ToolButton1: TToolButton;
+    SpeedButton1: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+uses
+ DataModule;
+end.

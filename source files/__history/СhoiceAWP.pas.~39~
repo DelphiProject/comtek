@@ -1,0 +1,72 @@
+unit ÑhoiceAWP;
+
+interface
+
+uses Winapi.Windows, System.SysUtils, System.Classes, Vcl.Graphics, Vcl.Forms,
+  Vcl.Controls, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TÑhoiceAWPForm = class(TForm)
+    OperatorBitBtn: TBitBtn;
+    StatistBitBtn: TBitBtn;
+    procedure FormCreate(Sender: TObject);
+    procedure OperatorBitBtnClick(Sender: TObject);
+    procedure StatistBitBtnClick(Sender: TObject);
+  private
+    { Private declarations }
+    procedure CreateMainForm;
+  public
+    { Public declarations }
+  end;
+
+var
+  ÑhoiceAWPForm: TÑhoiceAWPForm;
+
+implementation
+
+{$R *.dfm}
+ uses
+  main, DataModule;
+
+//Ïðîöåäóðà
+procedure TÑhoiceAWPForm.CreateMainForm;
+ var
+   P:Pointer;
+ begin
+   P := @Application.Mainform;
+
+          if (not Assigned(MainForm)) then
+          MainForm := TMainForm.Create(Self);
+   Pointer(P^) := MainForm;
+   MainForm.Show;
+
+
+
+ end;
+
+procedure TÑhoiceAWPForm.FormCreate(Sender: TObject);
+begin
+ with DataModuleForm.IconsImageList do
+  begin
+   GetBitmap(0,OperatorBitBtn.Glyph);
+   GetBitmap(1,StatistBitBtn.Glyph);
+  end;
+end;
+
+procedure TÑhoiceAWPForm.OperatorBitBtnClick(Sender: TObject);
+begin
+
+       // SetAsMainForm(MainForm);
+
+        DataModuleForm.CreateOperatorMDIChild('ÀÐÌ Îïåðàòîðà' + IntToStr(MainForm.MDIChildCount + 1));
+end;
+
+procedure TÑhoiceAWPForm.StatistBitBtnClick(Sender: TObject);
+begin
+
+        //SetAsMainForm(MainForm);
+        MainForm.Show;
+        DataModuleForm.CreateStatistMDIChild('ÀÐÌ Ñòàòèñòà' + IntToStr(MainForm.MDIChildCount + 1));
+end;
+
+end.

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.534,=C:\PROG\Embarcadero\comtek_new\OKCANCL2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.862,=C:\PROG\Embarcadero\comtek_new\OKCANCL2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.963,C:\PROG\Embarcadero\comtek_new\OKCANCL2.dfm=C:\PROG\Embarcadero\comtek_new\СhoiceAWP.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.175,C:\PROG\Embarcadero\comtek_new\Unit1.dfm=C:\PROG\Embarcadero\comtek_new\DataModule.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.767,C:\PROG\Embarcadero\comtek_new\Unit1.dfm=C:\PROG\Embarcadero\comtek_new\FrmFind.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.973,C:\PROG\Embarcadero\comtek_new\СhoiceAWP.dfm=C:\PROG\Embarcadero\comtek_new\OKCANCL2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.629,=C:\PROG\Embarcadero\comtek_new\ModelSupport_comtek\default.txaPackage</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.351,C:\PROG\Embarcadero\comtek_new\ChildOperator.dfm=C:\PROG\Embarcadero\comtek_new\ChildWin.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.485,C:\PROG\Embarcadero\comtek_new\about.dfm=C:\PROG\Embarcadero\comtek_new\DBConnect.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.963,C:\PROG\Embarcadero\comtek_new\OKCANCL2.pas=C:\PROG\Embarcadero\comtek_new\СhoiceAWP.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.351,C:\PROG\Embarcadero\comtek_new\ChildOperator.pas=C:\PROG\Embarcadero\comtek_new\ChildWin.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.397,=C:\PROG\Embarcadero\comtek_new\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.767,C:\PROG\Embarcadero\comtek_new\Unit1.pas=C:\PROG\Embarcadero\comtek_new\FrmFind.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.485,C:\PROG\Embarcadero\comtek_new\СhoiceAWP.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.973,C:\PROG\Embarcadero\comtek_new\СhoiceAWP.pas=C:\PROG\Embarcadero\comtek_new\OKCANCL2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.217,C:\PROG\Embarcadero\comtek_new\comtek.dproj=C:\PROG\Embarcadero\comtek_new\MDIAPP.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.485,C:\PROG\Embarcadero\comtek_new\about.pas=C:\PROG\Embarcadero\comtek_new\DBConnect.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.175,C:\PROG\Embarcadero\comtek_new\Unit1.pas=C:\PROG\Embarcadero\comtek_new\DataModule.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.503,=C:\PROG\Embarcadero\comtek_new\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.616,C:\PROG\Embarcadero\comtek_new\Unit1.pas=C:\PROG\Embarcadero\comtek_new\AdjustGrid.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.553,=C:\PROG\Embarcadero\comtek_new\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

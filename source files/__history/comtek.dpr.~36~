@@ -1,0 +1,22 @@
+program comtek;
+
+uses
+  Forms,
+  Main in 'Main.pas' {MainForm},
+  ChildOperator in 'ChildOperator.pas' {FrmOperator},
+  ChildStatist in 'ChildStatist.pas' {FrmStatist},
+  DBConnect in 'DBConnect.pas' {DBConnectForm},
+  DataModule in 'DataModule.pas' {DataModuleForm: TDataModule},
+  ÑhoiceAWP in 'ÑhoiceAWP.pas' {ÑhoiceAWPForm: TDataModule},
+  Vcl.Themes,
+  Vcl.Styles,
+  FrmFind in 'FrmFind.pas' {FrameFind: TFrame},
+  AdjustGrid in 'AdjustGrid.pas';
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TDataModuleForm, DataModuleForm);
+  Application.Run;
+end.

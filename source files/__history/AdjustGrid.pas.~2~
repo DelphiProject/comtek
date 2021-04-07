@@ -1,0 +1,40 @@
+{ This unit was developed by Philippe Randour (philippe_randour@hotmail.com)
+  in August 2000. It can be freely used in your own development.
+  Thank you for your interest. }
+
+unit AdjustGrid;
+
+interface
+
+uses Windows, Forms, DBGrids;
+
+Procedure AutoSizeColDBGrid(DBGrid:TDBGrid);
+
+implementation
+
+Procedure AutoSizeColDBGrid(DBGrid:TDBGrid);
+var i, ColWidth, ColTextWidth:integer;
+begin
+if DBGrid.DataSource.DataSet.Active then
+ begin
+  DBGrid.DataSource.DataSet.DisableControls;
+  for i:= 0 to DBGrid.Columns.Count-1 do
+    begin
+       ColWidth:=DBGrid.Canvas.TextWidth(DBGrid.Columns[i].Field.DisplayLabel);
+             DBGrid.DataSource.DataSet.First;
+             while not DBGrid.DataSource.DataSet.EOF do
+               begin
+                ColTextWidth:=DBGrid.Canvas.TextWidth(DBGrid.Columns[i].Field.DisplayText);
+                  if (ColTextWidth>ColWidth) then
+                   begin
+                    ColWidth:=ColTextWidth;
+                   end;
+                 DBGrid.DataSource.DataSet.Next;
+               end;{while}
+       DBGrid.Columns[i].Width:=ColWidth+30;
+  end;{for}
+  DBGrid.DataSource.DataSet.EnableControls;
+  DBGrid.DataSource.DataSet.First;
+ end;
+end;
+end.

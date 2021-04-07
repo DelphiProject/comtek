@@ -1,0 +1,37 @@
+unit about;
+
+interface
+
+uses Winapi.Windows, System.Classes, Vcl.Graphics, Vcl.Forms, Vcl.Controls,
+  Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.ToolWin;
+
+type
+  TAboutBox = class(TForm)
+    LabeledEdit1: TLabeledEdit;
+    LabeledEdit2: TLabeledEdit;
+    LabeledEdit3: TLabeledEdit;
+    LabeledEdit4: TLabeledEdit;
+    LabeledEdit5: TLabeledEdit;
+    ToolBar1: TToolBar;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    ToolButton3: TToolButton;
+    ToolButton4: TToolButton;
+    ToolButton5: TToolButton;
+    ToolButton6: TToolButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  AboutBox: TAboutBox;
+
+implementation
+
+{$R *.dfm}
+uses
+ DataModule;
+end.
+ 
